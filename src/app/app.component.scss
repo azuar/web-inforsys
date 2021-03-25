@@ -1,0 +1,80 @@
+.spacer {
+    flex: 1 1 auto;
+}
+mat-toolbar{
+    margin-top: -7rem;
+    position: fixed;
+    z-index: 1000;
+    a{
+        text-decoration: none;
+        &:hover {
+            color: rgb(90, 79, 220);
+            border-bottom: 2px solid rgba(91, 79, 220, 0.247);
+          }
+          &:focus {
+            font-weight: 500;
+            color: rgb(90, 79, 220);
+            border-bottom: 2px solid rgb(90, 79, 220);
+          }
+    }
+}
+.ng-container{
+    margin-right: 70px;
+    margin-left: 70px;
+    margin-top: 7rem;
+    margin-bottom: 10px;
+}
+.mr {
+    margin-right: 11rem;
+}
+.ml{
+    margin-left: 50px;
+}
+.logobar{
+    margin-top: 3px;
+    img {
+        height: 34px;
+    }
+}
+.footer-2{
+    padding: 20px;
+}
+.uk-container-footer {
+    margin-left: 70px; 
+    margin-right: 70px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+.address {
+    img{
+        height: 34px;
+    }
+    p{
+        margin-top: 10px;
+        color: white;
+        line-height: 1.8;
+    }
+}
+.compFooter {
+    h3{
+        color: white;
+        font-weight: bold;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+        &:hover {
+            color: rgb(90, 79, 220);
+            border-bottom: 2px solid rgba(91, 79, 220, 0.247);
+          }
+          &:focus {
+            font-weight: 500;
+            color: rgb(90, 79, 220);
+            border-bottom: 2px solid rgb(90, 79, 220);
+          }
+    }
+}
+.iconify {
+    font-size: 50px;
+    padding: 10px;
+}
