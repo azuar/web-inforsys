@@ -1,5 +1,5 @@
 <!-- Toolbar -->
-<mat-toolbar style="background-color: white; box-shadow: 0 0 10px 0 rgb(0 0 0 / 6%);">
+<!-- <mat-toolbar style="background-color: white; box-shadow: 0 0 10px 0 rgb(0 0 0 / 6%);">
   <span class="ml"></span>
   <a class="logobar" routerLink="/public/home"><img src="../assets/images/inforsys-logo.png" alt="logobar"></a>
   <span class="spacer"></span>
@@ -8,64 +8,64 @@
   <a mat-button routerLink="/public/pisi"> PISI </a>
   <a mat-button routerLink="/public/contact-us"> Contact Us </a>
   <span class="mr"></span>
-</mat-toolbar>
+</mat-toolbar> -->
+<app-main-nav>
+  <div class="ng-container">
+    <router-outlet></router-outlet>
+  </div>
+  <!-- Footer -->
+  <div style="background-color:#292838">
+    <div class="uk-container-footer">
+      <div class="uk-child-width-1-2@s" uk-grid>
+        <div>
+          <div class="address">
+            <img src="../assets/images/inforsys-white.png" alt="footerImg">
+            <p>PT Inforsys Indonesia <br> Orchard Walk Blok C#18 <br> Jl. Orchard Boulevard <br> Orchad Park Batam <br>
+              Batam Kota <br> Kepulauan Riau 29464</p>
+            <span class="iconify" data-icon="eva:facebook-outline" data-inline="false"></span>
+            <span class="iconify" data-icon="eva:twitter-outline" data-inline="false"></span>
+            <span class="iconify" data-icon="akar-icons:instagram-fill" data-inline="false"></span>
+            <span class="iconify" data-icon="feather:gitlab" data-inline="false"></span>
+          </div>
+        </div>
+        <div>
+          <div class="uk-child-width-1-3@s" uk-grid>
+            <div>
+              <div class="compFooter">
+                <h3>ABOUT US</h3>
+                <p><a routerLink="/public/home">About</a></p>
+                <p><a routerLink="/public/career">Career</a></p>
+                <p><a routerLink="/public/contact-us">Contact</a></p>
+              </div>
+            </div>
+            <div>
+              <div class="compFooter">
+                <h3>PRODUCTS</h3>
+                <p><a routerLink="/public/sofi">SOFI</a></p>
+                <p><a routerLink="/public/pisi">PISI</a></p>
+              </div>
+            </div>
+            <div>
+              <div class="compFooter">
+                <h3>SUPPORT</h3>
+                <p><a routerLink="/terms-conditions">Terms & Conditions</a></p>
+                <p><a routerLink="/privacy-policy">Privacy Policy</a></p>
+                <p><a routerLink="/covid-19">Covid-19</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+    <div>
+      <div class="uk-background-secondary uk-light footer-2">
+        2021 © PT Inforsys Indonesia.
+      </div>
+    </div>
+  </div>
+  <!-- Akhir Footer -->
+</app-main-nav>
 <!-- Akhir Toolbar -->
 
-<div class="ng-container">
-  <router-outlet></router-outlet>
-</div>
-
-
-<!-- Footer -->
-<div style="background-color: #292838;">
-  <div class="uk-container-footer">
-    <div class="uk-child-width-1-2@s" uk-grid>
-      <div>
-        <div class="address">
-          <img src="../assets/images/inforsys-white.png" alt="footerImg">
-          <p>PT Inforsys Indonesia <br> Orchard Walk Blok C#18 <br> Jl. Orchard Boulevard <br> Orchad Park Batam <br>
-            Batam Kota <br> Kepulauan Riau 29464</p>
-          <span class="iconify" data-icon="eva:facebook-outline" data-inline="false"></span>
-          <span class="iconify" data-icon="eva:twitter-outline" data-inline="false"></span>
-          <span class="iconify" data-icon="akar-icons:instagram-fill" data-inline="false"></span>
-          <span class="iconify" data-icon="feather:gitlab" data-inline="false"></span>
-        </div>
-      </div>
-      <div>
-        <div class="uk-child-width-1-3@s" uk-grid>
-          <div>
-            <div class="compFooter">
-              <h3>ABOUT US</h3>
-              <p><a routerLink="/public/home">About</a></p>
-              <p><a routerLink="/public/career">Career</a></p>
-              <p><a routerLink="/public/contact-us">Contact</a></p>
-            </div>
-          </div>
-          <div>
-            <div class="compFooter">
-              <h3>PRODUCTS</h3>
-              <p><a routerLink="/public/sofi">SOFI</a></p>
-              <p><a routerLink="/public/pisi">PISI</a></p>
-            </div>
-          </div>
-          <div>
-            <div class="compFooter">
-              <h3>SUPPORT</h3>
-              <p><a routerLink="/terms-conditions">Terms & Conditions</a></p>
-              <p><a routerLink="/privacy-policy">Privacy Policy</a></p>
-              <p><a routerLink="/covid-19">Covid-19</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
-  <div>
-    <div class="uk-background-secondary uk-light footer-2">
-      2021 © PT Inforsys Indonesia.
-    </div>
-  </div>
-</div>
-<!-- Akhir Footer -->
